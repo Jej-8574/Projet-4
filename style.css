@@ -149,7 +149,6 @@ input {
 
 .button-violet:hover {
   background: linear-gradient(to bottom, #FF99EE, #B085E6);
-  /* Couleurs plus claires */
 }
 
 .fonctionnement {
@@ -322,25 +321,41 @@ ol {
 
 .cards-heart #empty {
   position: absolute;
+  opacity: 1;
+  transform: scale(1);
+  transition: opacity 0.8s, transform 0.8s;
 }
 
 .cards-heart #empty:hover {
   opacity: 0;
-  transition: 0.8s;
+  transform: scale(1);
 }
 
 .cards-heart #full {
   position: absolute;
   opacity: 0;
+  transform: scale(0.8);
   background: linear-gradient(45deg, #9356DC, #FF79DA);
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
+  transition: opacity 0.8s, transform 0.8s;
 }
 
 .cards-heart #full:hover {
-  transition: 0.8s;
   opacity: 1;
+  transform: scale(1.0);
 }
+
+.cards-heart:not(:hover) #empty {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.cards-heart:not(:hover) #full {
+  opacity: 0;
+  transform: scale(1);
+}
+
 
 
 /* Footer Content */
@@ -458,15 +473,15 @@ body.loaded .main-content {
     width: -webkit-fill-available;
   }
   .restaurant-cards {
-    display: flex; /* Met les cartes côte à côte */
-    gap: 50px; /* Espace entre les cartes */
-    justify-content: space-between; /* Équilibre l'espacement horizontal */
+    display: flex;
+    gap: 50px;
+    justify-content: space-between;
     margin-bottom: 40px;
   }
   .cards {
-    flex: 1 1 calc(10% - 20px); /* Chaque carte occupe 50% de la largeur moins l'espace */
+    flex: 1 1 calc(10% - 20px);
     display: flex;
-    flex-direction: column; /* Aligne les contenus verticalement */
+    flex-direction: column;
   }
   .restaurant-section {
     padding: 30px;
