@@ -304,34 +304,25 @@ ol {
 
 .cards-heart {
   position: absolute;
-  bottom: 15px;
-  right: 15px;
+  bottom: 50px;
+  right: 50px;
   font-size: 1.25rem;
   color: #000;
   cursor: pointer;
 }
 
-.cards-heart i{
-  position: absolute;
-  bottom: 15px;
-  right: 15px;
-  font-size: 1.25rem;
-  cursor: pointer;
-}
-
-.cards-heart #empty {
+.heart-empty {
   position: absolute;
   opacity: 1;
   transform: scale(1);
   transition: opacity 0.8s, transform 0.8s;
 }
 
-.cards-heart #empty:hover {
+.heart-empty:hover {
   opacity: 0;
-  transform: scale(1);
 }
 
-.cards-heart #full {
+.heart-full {
   position: absolute;
   opacity: 0;
   transform: scale(0.8);
@@ -341,18 +332,8 @@ ol {
   transition: opacity 0.8s, transform 0.8s;
 }
 
-.cards-heart #full:hover {
+.heart-full:hover {
   opacity: 1;
-  transform: scale(1.0);
-}
-
-.cards-heart:not(:hover) #empty {
-  opacity: 1;
-  transform: scale(1);
-}
-
-.cards-heart:not(:hover) #full {
-  opacity: 0;
   transform: scale(1);
 }
 
@@ -484,8 +465,8 @@ body.loaded .main-content {
     flex-direction: column;
   }
   .restaurant-section {
-    padding: 30px;
-  }
+    padding: 30px;}
+
   .restaurant-content {
     padding-right: 170px;
     padding-left: 170px;
@@ -501,6 +482,11 @@ body.loaded .main-content {
   .cards .cards-contenant p {
     margin-top: 5px;
     font-weight: 300;
+  }
+  .restaurant-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    gap: 60px;
   }
 }
 
