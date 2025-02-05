@@ -1,0 +1,49 @@
+
+.fonctionnement {
+    counter-reset: step;
+}
+
+.fonctionnement i {
+    color: #7e7e7e;
+}
+
+.fonctionnement li {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    box-shadow: 0 4px 15px 0px rgba(0, 0, 0, 0.15);
+    border-radius: 20px;
+    font-weight: 500;
+    background-color: #f6f6f6;
+    margin-bottom: 20px;
+    padding: 29px 38px 29px 33px;
+}
+
+.fonctionnement-liste {
+    width: 100%;
+}
+
+.fonctionnement-titre {
+    margin-left: 20px;
+    margin-top: 50px;
+}
+
+.fonctionnement li::before {
+    align-items: center;
+    background-color: #9356dc;
+    border-radius: 50%;
+    color: #fff;
+    counter-increment: step;
+    content: counter(step);
+    display: flex;
+    height: 1.5em;
+    justify-content: center;
+    width: 1.5em;
+    position: relative;
+    left: -43px;
+    font-size: 1em;
+}
+
+.fonctionnement li i.fa-store {
+    color: #9356DC;
+}

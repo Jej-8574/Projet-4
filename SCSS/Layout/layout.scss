@@ -1,0 +1,22 @@
+@use "footer.scss";
+@use "header.scss";
+@use "restaurant.scss";
+
+
+.loader-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 9999;
+}
+
+ol {
+    padding: 17px;
+    padding-right: 25px;
+}

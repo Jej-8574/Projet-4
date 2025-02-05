@@ -1,0 +1,84 @@
+@media (min-width: 1024px) {
+    .barre-recherche {
+      box-shadow: none;
+    }
+  
+    .titre-haut {
+      h1 {
+        width: 100%;
+        font-size: 40px;
+      }
+    }
+  
+    footer {
+      flex-flow: row-reverse;
+      padding: 30px 25px;
+      gap: 90px;
+  
+      .footer-content {
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: flex-end;
+        gap: 15px;
+      }
+    }
+  
+    ol {
+      display: flex;
+      justify-content: space-evenly;
+      gap: 25px;
+    }
+  
+    .fonctionnement {
+      li {
+        &::before {
+          left: -45px;
+        }
+        width: -webkit-fill-available;
+      }
+    }
+  
+    .fonctionnement-liste {
+      padding-right: 180px;
+      padding-left: 180px;
+      width: 80%;
+    }
+  
+    .restaurant-cards {
+      display: flex;
+      gap: 50px;
+      justify-content: space-between;
+      margin-bottom: 40px;
+  
+      .cards {
+        flex: 1 1 calc(10% - 20px);
+        display: flex;
+        flex-direction: column;
+  
+        .cards-contenant {
+          padding: 10px;
+          gap: 5px;
+  
+          h3 {
+            margin: 0;
+          }
+  
+          p {
+            margin-top: 5px;
+            font-weight: 300;
+          }
+        }
+      }
+    }
+  
+    .restaurant-section {
+      padding: 30px;
+    }
+  
+    .restaurant-content {
+      padding-right: 170px;
+      padding-left: 170px;
+      width: 80%;
+    }
+  }
+  

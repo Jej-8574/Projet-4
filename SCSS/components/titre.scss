@@ -1,0 +1,27 @@
+
+.titre-haut h1 {
+    width: 275px;
+    height: auto;
+    font-weight: 700;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.titre-haut p {
+    color: #353535;
+    font-weight: 300;
+    font-size: 1.125em;
+    margin-top: 0;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+
+.titre-haut {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    background-color: #F6F6F6;
+}

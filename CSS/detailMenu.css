@@ -1,0 +1,382 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", sans-serif;
+}
+
+.header-menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    position: relative;
+}
+
+.header-menu i {
+    position: absolute;
+    left: 10px;
+    font-size: 20px;
+    margin-top: 15px;
+    margin-left: 10px;
+}
+
+.logo-ohmyfood {
+    margin-top: 14px;
+    height: 30px;
+}
+
+.icon-retour {
+    width: 17.2px;
+    height: 16px;
+    color: #353535;
+}
+
+.menu-img img {
+    width: 100%;
+    height: 275px;
+    object-fit: cover;
+    background-position: center;
+}
+
+.page-title {
+    font-family: Shrikhand;
+    font-size: 28px;
+    font-weight: 400;
+    font-style: italic;
+}
+
+.title {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+    padding-top: 15px;
+    margin-bottom: 40px;
+}
+
+.menu {
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #eaeaea;
+    margin-top: -50px;
+    border-radius: 40px 40px 0px 0px;
+    padding-left: 10px;
+    padding-right: 10px;
+    position: relative;
+}
+
+main {
+    background-color: #eaeaea;
+}
+
+.btn-favorite {
+    margin-left: auto;
+    cursor: pointer;
+}
+
+.menu-header {
+    font-size: 20px;
+    font-weight: 300;
+    border-bottom: 3px solid #99E2D0;
+    width: 40px;
+}
+
+.card-content-menu {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    padding: 15px 0px 15px 15px;
+    width: 50vw;
+}
+
+.card-title-menu,
+.card-subtitle-menu {
+    display: inline-block;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    max-width: 70%;
+}
+
+.menu-price {
+    display: flex;
+    width: 60px;
+    align-items: flex-end;
+    justify-content: flex-end;
+    padding: 1rem;
+    margin: 0;
+}
+
+.card-menu {
+    overflow: hidden;
+    background-color: white;
+    border-radius: 20px;
+    display: flex;
+    margin-bottom: 12px;
+    box-shadow: 0px 4.01px 15.04px 0px rgba(0, 0, 0, 0.1019607843);
+}
+
+.card-title-menu {
+    margin-bottom: 2px;
+    margin: 0;
+}
+
+.card-subtitle-menu {
+    margin: 0;
+}
+
+.cards-heart {
+    position: relative; 
+    font-size: 1.25rem;
+    bottom: 10px;
+    left: 15px;
+    color: #000;
+    cursor: pointer;
+  }
+  .cards-heart #empty {
+    position: absolute;
+    opacity: 1;
+    transform: scale(1);
+    transition: opacity 0.8s, transform 0.8s;
+  }
+  
+  .cards-heart #empty:hover {
+    opacity: 0;
+    transform: scale(1);
+  }
+  
+  .cards-heart #full {
+    position: absolute;
+    opacity: 0;
+    transform: scale(0.8);
+    background: linear-gradient(45deg, #9356DC, #FF79DA);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    transition: opacity 0.8s, transform 0.8s;
+  }
+  
+  .cards-heart #full:hover {
+    opacity: 1;
+    transform: scale(1.0);
+  }
+  
+  .cards-heart:not(:hover) #empty {
+    opacity: 1;
+    transform: scale(1);
+  }
+  
+  .cards-heart:not(:hover) #full {
+    opacity: 0;
+    transform: scale(1);
+  }
+
+/* Footer Content */
+
+footer {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    background-color: #353535;
+    color: #ffffff;
+    padding: 22px 25px;
+}
+
+footer .footer-content {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    gap: 7px;
+}
+
+footer a {
+    display: flex;
+    gap: 11px;
+    align-items: center;
+    font-weight: 400;
+}
+
+footer a i {
+    width: 11px;
+    height: 13px;
+    font-size: 13px;
+    display: inline-block;
+}
+
+footer .footer-content a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.footer-logo {
+    height: 27px;
+    width: 139px;
+    filter: brightness(0)invert(1);
+
+}
+
+.button-violet {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 25px;
+    width: 218px;
+    height: 50px;
+    background: linear-gradient(to bottom, #FF79DA, #9356DC);
+    font-weight: 500;
+    font-size: 16px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+    cursor: pointer;
+    text-decoration: none;
+    color: #ffffff;
+    margin-top: 13px;
+    margin-bottom: 25px;
+    transition: all 0.3s ease-in-out;
+}
+.button-violet:hover {
+    background: linear-gradient(to bottom, #FF99EE, #B085E6);
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(50px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .menu-section {
+    opacity: 0;
+    animation: fadeInUp 0.8s ease-out forwards;
+    
+  }
+  
+  .menu-section.entrees-menu {
+    animation-delay: 0.2s;
+  }
+  
+  .menu-section.plats-menu {
+    animation-delay: 0.4s;
+  }
+  
+  .menu-section.desserts-menu {
+    animation-delay: 0.6s;
+  }
+  .animation-menu {
+    opacity: 0;
+    background-color: #99e2d0;
+    width: 60px;
+    padding: 0 15px 15px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 57px;
+    margin-right: -60px;
+    transition: opacity 1s ease, margin 1s ease;
+}
+
+.card-menu:hover .animation-menu {
+    opacity: 1;
+    margin: 0;
+    height: 100%;
+}
+
+.menu-item-div {
+    height: 1.6rem;
+    width: 1.6rem;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100px;
+    transform: rotate(180deg);
+    transition: transform 0.5s ease, margin-top 0.5s ease;
+    margin-top: 15px;
+    margin-left: 10px;
+}
+
+.card-menu:hover .menu-item-div {
+    transform: rotate(360deg);
+}
+
+.card-menu {
+    transition: all 0.5s ease;
+}
+.menu-item-div i {
+    color: #99e2d0;
+}
+
+  
+@media (min-width: 1024px) {
+    footer {
+        flex-flow: row-reverse;
+        padding: 30px 25px;
+        gap: 90px;
+    }
+
+    footer .footer-content {
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: flex-end;
+        gap: 15px;
+    }
+
+    .menu {
+        max-width: 900px;
+        margin: -50px auto 0 auto;
+        background-color: #F6F6F6;
+        padding: 20px;
+        position: relative;
+    }
+
+    main {
+        background-color: #ffffff;
+    }
+
+    .menu-img img {
+        height: 383px;
+    }
+
+    .title {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .page-title {
+        margin: 0;
+        text-align: center;
+    }
+
+    .btn-favorite {
+        margin: 0;
+        align-self: center;
+        font-size: 1.2rem;
+        cursor: pointer;
+    }
+
+    .entrees-menu {
+        margin: 0 150px;
+    }
+
+    .plats-menu {
+        margin: 0 150px;
+    }
+
+    .desserts-menu {
+        margin: 0 150px;
+    }
+    .cards-heart {
+        bottom: 10px;
+        right: 0px;
+      }
+
+}

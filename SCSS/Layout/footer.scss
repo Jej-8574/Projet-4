@@ -1,0 +1,50 @@
+footer {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  background-color: #353535;
+  color: #ffffff;
+  padding: 22px 25px;
+
+  &__logo {
+      height: 27px;
+      width: 139px;
+      filter: brightness(0) invert(1);
+  }
+
+  &__content {
+      display: flex;
+      width: 100%;
+      flex-direction: column;
+      gap: 7px;
+  }
+
+  a {
+      display: flex;
+      gap: 11px;
+      align-items: center;
+      font-weight: 400;
+      text-decoration: none;
+      color: #ffffff;
+
+      i {
+          width: 11px;
+          height: 13px;
+          font-size: 13px;
+          display: inline-block;
+      }
+  }
+
+  @media (min-width: 1024px) {
+      flex-flow: row-reverse; 
+      padding: 30px 25px;
+      gap: 90px;
+
+      &__content {
+          flex-direction: row;
+          justify-content: flex-end;
+          align-items: flex-end;
+          gap: 15px;
+      }
+  }
+}

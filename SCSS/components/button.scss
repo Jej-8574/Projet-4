@@ -1,0 +1,22 @@
+.button-violet {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 25px;
+    width: 218px;
+    height: 50px;
+    background: linear-gradient(to bottom, #FF79DA, #9356DC);
+    font-weight: 500;
+    font-size: 16px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+    cursor: pointer;
+    text-decoration: none;
+    color: #ffffff;
+    margin-top: 13px;
+    margin-bottom: 25px;
+    transition: all 0.3s ease-in-out;
+}
+
+.button-violet:hover {
+    background: linear-gradient(to bottom, #FF99EE, #B085E6);
+}

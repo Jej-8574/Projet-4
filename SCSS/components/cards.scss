@@ -1,0 +1,103 @@
+
+.cards {
+    background-color: #FFFFFF;
+    border-radius: 20px;
+    width: 100%;
+    flex-basis: 100%;
+    height: 251px;
+    box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    position: relative;
+}
+
+.cards img {
+    display: flex;
+    object-fit: cover;
+    width: 100%;
+    height: 174px;
+    border-radius: 15px 15px 0 0;
+}
+
+
+
+.restaurant-content h2 {
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+
+.restaurant-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    width: 100%;
+}
+.cards .cards-contenant {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 0px 20px 0px 20px;
+}
+
+.cards .cards-contenant .cards-text h3 {
+    height: 20px;
+    color: #000000;
+    font-weight: 700;
+    display: none;
+}
+
+.cards .cards-contenant .cards-text {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    width: 85%;
+    height: auto;
+    gap: 5px;
+}
+
+.cards .cards-new {
+    background-color: #99E2D0;
+    color: #008766;
+    border-radius: 2px;
+    box-shadow: 0 2px 4px 0px rgba(0, 0, 0, 0.15);
+    font-family: "Roboto", sans-serif;
+    font-size: 0.875rem;
+    width: 5rem;
+    height: 29px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 13px;
+    right: 13px;
+    z-index: 1;
+}
+
+.cards a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.cards-heart {
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+    font-size: 1.25rem;
+    color: #000;
+    cursor: pointer;
+}
+
+.cards .cards-contenant {
+    padding: 10px;
+    gap: 5px;
+}
+
+.cards .cards-contenant h3 {
+    margin: 0;
+}
+
+.cards .cards-contenant p {
+    margin-top: 5px;
+    font-weight: 300;
+}
